@@ -1,0 +1,81 @@
+/**
+ * QuickControl
+ *
+ * Quicktime player controls
+ */
+
+.QuickControl .qtcontrols {
+	height: 27px;
+	background-color: #747474;
+	-moz-border-radius-bottomleft:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-right-radius:5px;
+	padding: 0 5px 0 5px;
+}
+
+.QuickControl .qtcontrols td {
+	font-size: 11px;
+	color: #e1e1e1;
+}
+
+.QuickControl .qtcontrols .seekBarHandle {
+	background: url(images/qt_pointer.png) bottom;
+	width: 13px;
+	height: 13px;
+}
+
+.QuickControl .qtcontrols .seekBar {
+	overflow: hidden;
+	margin: -7px 0 0 0;
+	height: 13px;
+	cursor: pointer;
+	float: left;
+	position: absolute;
+}
+
+.QuickControl .qtcontrols .seekBarLoaded {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: -7px 0 0 0;
+	height: 13px;
+	background: url(images/qt_bgtrack_load.png);
+	width: 1px;
+	float: left;
+	position: absolute;
+}
+
+.QuickControl .qtcontrols .seekBarUnloaded {
+	background: url(images/qt_bgtrack_unload.png);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: -7px 0 0 0;
+	height: 13px;
+	float: left;
+	position: absolute;
+}
+
+.QuickControl .qtcontrols .play div {
+	margin-top: -2px;
+	display: block;
+	width: 12px;
+	height: 14px;
+	background: url(images/qt_playpause.png) repeat-y;
+	cursor: pointer;
+}
+
+.QuickControl .qtcontrols .mute {
+	padding-right: 10px;
+}
+
+.QuickControl .qtcontrols .play div {
+	padding-right: 15px;
+}
+
+.QuickControl .qtcontrols .mute div  {
+	display: block;
+	width: 12px;
+	height: 14px;
+	background: url(images/qt_mute.png);
+	cursor: pointer;
+}

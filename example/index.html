@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>QuickControl Demo</title>
+<meta name="author" content="Devin Smith">
+
+<link rel="stylesheet" type="text/css" href="../QuickControl.css">
+<style type="text/css">
+	body {
+		background-color: #242424;
+		font: 11px Verdana, Arial;
+		color: #888888;
+	}
+	.center {
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 1200px;
+		text-align: center;
+	}
+	h1 {
+		font-family: Segoe UI, Lucida Grande, Geneva, Veranda, Arial, Helvetica, sans-serif;
+	}
+</style>
+
+<script type="text/javascript" src="mootools-1.2.4-core.js"></script>
+<script type="text/javascript" src="mootools-1.2.4.2-more.js"></script>
+<script type="text/javascript" src="../QuickControl.js"></script>
+<script type="text/javascript">
+	window.addEvent('domready', function() {
+		new QuickControl('http://movies.apple.com/movies/sony_pictures/district9/d9-fte_h.640.mov', {
+			id: 'QuickControlVid',
+			width: 640,
+			height: 340,
+			style: 'QuickControlCustom',
+			container: 'QuickControl',
+			attributes: {
+				autoplay: 'true',
+				enablejavascript: 'false'
+			}
+		});
+	});
+</script>
+
+</head>
+<body>
+
+<div class="center"><h1>QuickControl Demo</h1></div>
+
+<div id="QuickControl" class="center"><!-- --></div>
+
+</body>
+</html>
